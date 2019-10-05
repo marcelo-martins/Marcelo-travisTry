@@ -3,4 +3,4 @@ language: go
 
 script:
   - unset GOPATH
-  
+  - git clone https://github.com/restic/restic
