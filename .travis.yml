@@ -4,3 +4,7 @@ language: go
 script:
   - unset GOPATH
   - git clone https://github.com/restic/restic
+  - cd restic
+  - go build ./cmd/restic
+  - ./restic version
+  - go test ./...
